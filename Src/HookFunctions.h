@@ -1,7 +1,6 @@
 #pragma once
 #include <Windows.h>
 #include <winsock.h>
-#include <winsock.h>
 #include <string>
 #include <fstream>
 extern "C" __declspec(dllexport) int __stdcall Real_Recv(
