@@ -62,7 +62,6 @@ void PutJMP(void * WriteTo, void * HookFunction)
 int __stdcall Hook_Recv(SOCKET s, char * buf, int len, int flags)
 {
 	static int N = 0;
-	static int size = 0;
 	auto ret = Real_Recv(s, buf, len, flags);
 	std::string FileName = "Recv\\Log-";
 	FileName += std::to_string(N++) + ".txt";
